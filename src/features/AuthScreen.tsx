@@ -67,7 +67,7 @@ export const AuthScreen: React.FC<AuthScreenProps> = ({
         <div className="text-center space-y-2">
           <div className="flex items-center justify-center">
             <img 
-              src="/Finsocap_logo.png" 
+              src={`${import.meta.env.BASE_URL}Finsocap_logo.png`} 
               alt="Finsocap" 
               className="h-9 w-auto object-contain mx-auto" 
             />

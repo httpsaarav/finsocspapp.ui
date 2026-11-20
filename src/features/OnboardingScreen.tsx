@@ -14,7 +14,7 @@ export const OnboardingScreen: React.FC<OnboardingScreenProps> = ({ onFinish }) 
       badge: "Partner Franchise Ecosystem",
       title: "Manage and Scale Your Financial Services",
       subtitle: "Empower your local clients with 50+ corporate, tax, compliance, and legal services directly from your phone.",
-      image: "/illustrations/onboarding_1.jpg",
+      image: `${import.meta.env.BASE_URL}illustrations/onboarding_1.jpg`,
       gradient: "from-blue-600 to-indigo-700",
       accent: "text-blue-600"
     },
@@ -23,7 +23,7 @@ export const OnboardingScreen: React.FC<OnboardingScreenProps> = ({ onFinish }) 
       badge: "Expert CA & Legal Team",
       title: "Government Compliance & Approvals Made Effortless",
       subtitle: "Finsocap's senior legal team and Chartered Accountants draft, audit, and submit your clients' filings with zero friction.",
-      image: "/illustrations/onboarding_2.jpg",
+      image: `${import.meta.env.BASE_URL}illustrations/onboarding_2.jpg`,
       gradient: "from-emerald-600 to-teal-700",
       accent: "text-emerald-600"
     },
@@ -32,7 +32,7 @@ export const OnboardingScreen: React.FC<OnboardingScreenProps> = ({ onFinish }) 
       badge: "Real-Time Tracking & Chat",
       title: "Live Milestone Progress & SLA Assurances",
       subtitle: "Track government reference numbers, chat directly with assigned liaison officers, and receive instant document updates.",
-      image: "/illustrations/onboarding_3.jpg",
+      image: `${import.meta.env.BASE_URL}illustrations/onboarding_3.jpg`,
       gradient: "from-indigo-600 to-violet-700",
       accent: "text-indigo-600"
     },
@@ -41,7 +41,7 @@ export const OnboardingScreen: React.FC<OnboardingScreenProps> = ({ onFinish }) 
       badge: "Instant Wallet Payouts",
       title: "Earn Up to 35% Margins on Every Service",
       subtitle: "Transparent commission structures with instant withdrawal to your verified franchise bank account 24/7.",
-      image: "/illustrations/onboarding_4.jpg",
+      image: `${import.meta.env.BASE_URL}illustrations/onboarding_4.jpg`,
       gradient: "from-amber-600 to-orange-700",
       accent: "text-amber-600"
     }
@@ -74,7 +74,7 @@ export const OnboardingScreen: React.FC<OnboardingScreenProps> = ({ onFinish }) 
         {/* Logo centered and placed comfortably lower */}
         <div className="flex justify-center pt-2 pb-1">
           <img 
-            src="/Finsocap_logo.png" 
+            src={`${import.meta.env.BASE_URL}Finsocap_logo.png`} 
             alt="Finsocap" 
             className="h-10 w-auto object-contain"
           />

@@ -71,7 +71,7 @@ export const HomeScreen: React.FC<HomeScreenProps> = ({
           className="flex items-center text-left cursor-pointer active:scale-98 transition-all"
         >
           <img 
-            src="/Finsocap_logo.png" 
+            src={`${import.meta.env.BASE_URL}Finsocap_logo.png`} 
             alt="Finsocap" 
             className="h-8 w-auto object-contain"
           />

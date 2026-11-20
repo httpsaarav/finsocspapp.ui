@@ -72,11 +72,11 @@ export const PaymentSettlementModal: React.FC<PaymentSettlementModalProps> = ({
           {/* Centered Finsocap Brand */}
           <div className="flex items-center gap-2">
             <img 
-              src="/logo-icon.png" 
+              src={`${import.meta.env.BASE_URL}logo-icon.png`} 
               alt="Finsocap Logo" 
               className="w-6 h-6 object-contain"
               onError={(e) => {
-                (e.target as HTMLImageElement).src = '/Finsocap_logo.png';
+                (e.target as HTMLImageElement).src = `${import.meta.env.BASE_URL}Finsocap_logo.png`;
               }}
             />
             <span className="text-base font-black text-slate-900 tracking-tight">Finsocap</span>
@@ -154,19 +154,19 @@ export const PaymentSettlementModal: React.FC<PaymentSettlementModalProps> = ({
                 <div className="flex items-center justify-center gap-2">
                   {/* PhonePe */}
                   <div className="flex items-center gap-1.5 bg-white px-2.5 py-1 rounded-xl border border-slate-200/90 shadow-xs">
-                    <img src="/phonepe.png" alt="PhonePe" className="w-3.5 h-3.5 object-contain" />
+                    <img src={`${import.meta.env.BASE_URL}phonepe.png`} alt="PhonePe" className="w-3.5 h-3.5 object-contain" />
                     <span className="text-[10px] font-black text-slate-800">PhonePe</span>
                   </div>
 
                   {/* GPay */}
                   <div className="flex items-center gap-1.5 bg-white px-2.5 py-1 rounded-xl border border-slate-200/90 shadow-xs">
-                    <img src="/gpay.png" alt="GPay" className="w-3.5 h-3.5 object-contain" />
+                    <img src={`${import.meta.env.BASE_URL}gpay.png`} alt="GPay" className="w-3.5 h-3.5 object-contain" />
                     <span className="text-[10px] font-black text-slate-800">GPay</span>
                   </div>
 
                   {/* Paytm */}
                   <div className="flex items-center gap-1.5 bg-white px-2.5 py-1 rounded-xl border border-slate-200/90 shadow-xs">
-                    <img src="/paytm.png" alt="Paytm" className="w-3.5 h-3.5 object-contain" />
+                    <img src={`${import.meta.env.BASE_URL}paytm.png`} alt="Paytm" className="w-3.5 h-3.5 object-contain" />
                     <span className="text-[10px] font-black text-slate-800">Paytm</span>
                   </div>
                 </div>
